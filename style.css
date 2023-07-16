@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+    html {
+        font-size: 100%;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        padding: 0 16px;
+        margin: auto;
+        font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    /* header */
+
+    header {
+        margin-bottom: 40px;
+    }
+
+    header .logo img {
+        width: 12%;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    header .wrapper ul {
+        background-color: #333;
+        display: flex;
+        justify-content: left;
+        width: 100vw;
+        margin-left:calc( ( 100% - 100vw ) / 2 );
+        padding-left: 260px;
+    }
+
+    header .wrapper li {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    header .wrapper li a {
+        margin-right: 60px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* pick up */
+
+    #pickup .article {
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    #pickup article {
+        margin-right: 20px;
+    }
+
+    #pickup article:last-child { /* 一番右のマージン除去 */
+        margin-right: 0px;
+    }
+
+    #pickup .link {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #pickup .link a {
+        position: relative;
+    }
+
+    #pickup .link a::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background: #333;
+        transition: all 200ms ease;
+      }
+      /*
+      ホバー時の下線の設定
+      「opacity: 0;」下線を非表示
+      「transform: translateY(3px);」下に3px移動
+      →下に3px移動しながら下線を非表示にする
+      */
+      #pickup .link a:hover::after {
+        opacity: 0;
+        transform: translateY(3px);
+      }
+
+    #pickup p {
+        margin-top: 10px;
+    }
+
+    #pickup .text {
+        font-weight: bold;
+    }
+
+    /* flex */
+
+    .flex {
+        display: flex;
+    }
+
+    #main {
+        width: 65%;
+        margin-right: 40px;
+    }
+
+    #side {
+        width: 33%;
+    }
+
+    /* main */
+
+    #main article {
+        margin-bottom: 80px;
+    }
+
+    #main .main-title { /* タイトル全て */
+        font-size: 25px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    #main article ul {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    #main article li {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    #main article .text {
+        padding: 0 40px;
+        margin-top: 10px;
+    }
+
+    #main article .link {
+        padding: 0 40px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    /* side */
+
+    #side .title {  /* sideのタイトル全てに適用 */
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+     /* plofile */
+
+    #side .plofile .img {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #side .plofile img {
+        border-radius:50%;
+        width: 35%;
+      }
+
+      #side .plofile .text {
+        padding: 0 20px;
+        font-size: 0.875rem;
+        margin-bottom: 50px;
+      }
+
+    /* ranking */
+
+    .ranking {
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .ranking article {
+        margin-bottom: 30px;
+    }
+
+    .ranking p {
+        font-size: 13px;
+    }
+
+    /* archives */
+
+    .archive {
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .archive li {
+        border-bottom: #333 0.5px solid;
+        border-top: #333 0.5px solid;
+        padding: 20px 20px;
+        font-size: 13px;
+    }
+
+    /* footer */
+
+    footer {
+        background-color: #f5f2f2;
+        padding-bottom: 20px;
+    }
+
+    footer .flex {
+        display: flex;
+        padding-top: 60px;
+    }
+
+    footer .flex .title {
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    /* footer-about */
+
+    footer #about {
+        width: calc(100% / 3);
+        margin-right: 30px;
+    }
+
+    footer #about .text {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    footer #about .link a {
+        font-size: 13px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    /* footer-menu */
+    footer #Menu {
+        width: calc(100% / 3);
+        margin-right: 30px;
+    }
+
+    footer #Menu li {
+        border-bottom: #333 0.5px solid;
+        border-top: #333 0.5px solid;
+        padding: 15px 0;
+    }
+
+    footer #Menu li a {
+        color: #333;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    /* footer-twitter */
+    footer #Twitter {
+        width: calc(100% / 3);   
+    }
+
+
+    /* copy */
+    .copy {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 100px;
+    }
